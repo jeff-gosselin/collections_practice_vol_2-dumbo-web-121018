@@ -36,7 +36,16 @@ end
 
 def merge_data(keys, data)
   merged = []
-  
+  blake_key = keys.select {|x| x[:first_name] == "blake"}
+  blake_data = data[0]["blake"]
+  blake_key.push(blake_data)
+
+  ashley_key = keys.select {|x| x[:first_name] == "ashley"}
+  ashley_data = data[0]["ashley"]
+  ashley_key.push(ashley_data)
+
+  merged << blake_key
+  merged << ashley_key
 end
 
 def find_cool(temp)
