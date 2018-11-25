@@ -44,7 +44,7 @@ def merge_data(keys, data)
 
   ashley_key = keys.select {|x| x[:first_name] == "ashley"}
   ashley_data = data[0]["ashley"]
-  blake_key[0].merge(blake_data)
+  ashley_key[0].merge(ashley_data)
   
   merged << blake_key
   merged << ashley_key
