@@ -40,14 +40,14 @@ def merge_data(keys, data)
   blake_key = keys.select {|x| x[:first_name] == "blake"}
   blake_data = data[0]["blake"]
   
-  blake_key[0].merge(blake_data)
+  blake_hash = blake_key[0].merge(blake_data)
 
   ashley_key = keys.select {|x| x[:first_name] == "ashley"}
   ashley_data = data[0]["ashley"]
-  ashley_key[0].merge(ashley_data)
+  ash_hash = ashley_key[0].merge(ashley_data)
   
-  merged << blake_key
-  merged << ashley_key
+  merged << blake_hash
+  merged << ash_hash
 end
 
 def find_cool(temp)
