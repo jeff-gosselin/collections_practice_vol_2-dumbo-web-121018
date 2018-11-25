@@ -40,7 +40,7 @@ def merge_data(keys, data)
   blake_key = keys.select {|x| x[:first_name] == "blake"}
   blake_data = data[0]["blake"]
   binding.pry
-  blake_key.push(blake_data)
+  blake_key[0].merge(blake_data)
 
   ashley_key = keys.select {|x| x[:first_name] == "ashley"}
   ashley_data = data[0]["ashley"]
