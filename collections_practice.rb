@@ -1,3 +1,4 @@
+require 'pry'
 def begins_with_r(array)
   test = array.map { |word| word.start_with?('r') }
   result = test.include?(false)
@@ -43,7 +44,7 @@ def merge_data(keys, data)
   ashley_key = keys.select {|x| x[:first_name] == "ashley"}
   ashley_data = data[0]["ashley"]
   ashley_key.push(ashley_data)
-
+  binding.pry
   merged << blake_key
   merged << ashley_key
 end
