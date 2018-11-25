@@ -56,6 +56,7 @@ end
 
 def organize_schools(schools)
   schools.each do |name, loc_hash|
+    location = loc_hash[:location]
     binding.pry
     
   end
