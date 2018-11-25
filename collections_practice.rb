@@ -53,5 +53,5 @@ def find_cool(temp)
 end
 
 def organize_schools(schools)
-  sf = schools.select {|val| val[:location] == "SF"}
+  # sf = schools.select {|val| val[:location] == "SF"}
 end
