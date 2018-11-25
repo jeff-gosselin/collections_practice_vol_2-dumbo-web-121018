@@ -47,7 +47,7 @@ def merge_data(keys, data)
   ash_hash = ashley_key[0].merge(ashley_data)
   
   merged << blake_hash
-  merged << ash_hash
+  merged << ashley_key
 end
 
 def find_cool(temp)
@@ -55,6 +55,6 @@ def find_cool(temp)
 end
 
 # def organize_schools(schools)
-#   schools
+  schools
 #   # sf = schools.select {|val| val[:location] == "SF"}
 # end
