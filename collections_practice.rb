@@ -47,7 +47,7 @@ def merge_data(keys, data)
   ash_hash = ashley_key[0].merge(ashley_data)
   
   merged << blake_hash
-  merged << ashley_key
+  merged << ash_hash
 end
 
 def find_cool(temp)
