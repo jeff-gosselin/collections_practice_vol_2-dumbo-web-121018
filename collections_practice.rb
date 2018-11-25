@@ -55,15 +55,16 @@ def find_cool(temp)
 end
 
 def organize_schools(schools)
-  organized = {}
-  schools.each do |name, loc_hash|
-    location = loc_hash[:location]
-    if organized[location]
-      organized[location] << name
-  else
-    organized[location] = []
-    organized[location] << name
-  end
-  end
-   organized 
+  schools
+  # organized = {}
+  # schools.each do |name, loc_hash|
+  #   location = loc_hash[:location]
+  #   if organized[location]
+  #     organized[location] << name
+  # else
+  #   organized[location] = []
+  #   organized[location] << name
+  # end
+  # end
+  # organized 
 end
