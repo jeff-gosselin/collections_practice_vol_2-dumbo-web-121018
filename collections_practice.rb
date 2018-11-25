@@ -53,5 +53,5 @@ def find_cool(temp)
 end
 
 def organize_schools(schools)
-  schools
+  schools.select {|val| val[]}
 end
