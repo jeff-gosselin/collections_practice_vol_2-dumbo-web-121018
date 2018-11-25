@@ -64,10 +64,10 @@ def organize_schools(schools)
     organized[location] = []
     organized[location] << name
   end
-    organized
+    
   end
     
-    
+   organized 
   
   # sf = schools.select {|val| val[:location] == "SF"}
 end
