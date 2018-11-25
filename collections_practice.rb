@@ -1,4 +1,3 @@
-# require 'pry'
 def begins_with_r(array)
   test = array.map { |word| word.start_with?('r') }
   result = test.include?(false)
