@@ -52,6 +52,6 @@ def find_cool(temp)
   temp.select {|elem| elem[:temperature] == "cool" }
 end
 
-def organize_schools
+def organize_schools(schools)
   
 end
