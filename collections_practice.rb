@@ -55,6 +55,12 @@ def find_cool(temp)
 end
 
 def organize_schools(schools)
-  schools
+  schools.each do |name, loc_hash|
+    binding.pry
+    
+  end
+    
+    
+  
   # sf = schools.select {|val| val[:location] == "SF"}
 end
