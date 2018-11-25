@@ -55,8 +55,10 @@ def find_cool(temp)
 end
 
 def organize_schools(schools)
+  organized = {}
   schools.each do |name, loc_hash|
     location = loc_hash[:location]
+    if organized[location]
     binding.pry
     
   end
